@@ -1,0 +1,15 @@
+[package]
+name = "exkeccak"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "exkeccak"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+rustler = "0.21.1"
+lazy_static = "1.0"
+tiny-keccak = { version = "2.0", features = ["keccak"] }
