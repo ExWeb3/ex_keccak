@@ -15,5 +15,17 @@ defmodule ExKeccakTest do
 
       assert Base.encode16(address, case: :lower) == "73bb50c828fd325c011d740fde78d02528826156"
     end
+
+    test "fails to decode number" do
+      assert {:error, :invalid_type} = ExKeccak.hash_256(11)
+    end
+
+    test "fails to decode nil" do
+      assert {:error, :invalid_type} = ExKeccak.hash_256(nil)
+    end
+
+    test "fails to decode atom" do
+      assert {:error, :invalid_type} = ExKeccak.hash_256(:atom)
+    end
   end
 end

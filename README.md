@@ -1,21 +1,47 @@
 # ExKeccak
 
-**TODO: Add description**
+ExKeccak is a NIF that wraps the KECCAK-256 function from the [tiny-keccak](https://github.com/debris/tiny-keccak) Rust library. KECCAK-256 is used by Ethereum.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex_keccak` to your list of dependencies in `mix.exs`:
+`ex_keccak` requires Rust to be installed.
+
+The package can be installed by adding `ex_keccak` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:ex_keccak, "~> 0.1.0"}
+    {:ex_keccak, "~> 0.1.1"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/ex_keccak](https://hexdocs.pm/ex_keccak).
 
+## Usage
+
+To calculate KECCAK-256 hash, use `ExKeccak.hash_256/1` function. It returns `{:ok, result}` on success:
+
+```elixir
+{
+  :ok,
+  <<28, 138, 255, 149, 6, 133, 194, 237, 75, 195, 23, 79, 52, 114, 40, 123, 86, 217, 81, 123, 156, 148, 129, 39, 49, 154, 9, 167, 163, 109, 234, 200>>
+} = ExKeccak.hash_256("hello")
+```
+
+And it returns `{:error, :invalid_type}` if the provided data is not binary:
+
+```elixir
+{:error, :invalid_type} = ExKeccak.hash_256(11)
+```
+
+## Contributing
+
+1. [Fork it!](https://github.com/tzumby/ex_keccak)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## License
+
+ExKeccak is released under the Apache-2.0 License.
