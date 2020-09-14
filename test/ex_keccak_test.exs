@@ -27,5 +27,38 @@ defmodule ExKeccakTest do
     test "fails to decode atom" do
       assert {:error, :invalid_type} = ExKeccak.hash_256(:atom)
     end
+
+    @tag :perf
+    @tag timeout: 300_000
+    test "sequencial performance test" do
+      data = :crypto.strong_rand_bytes(100)
+
+      Benchee.run(
+        %{
+          "ex_keccak" => fn ->
+            ExKeccak.hash_256(data)
+          end
+        },
+        time: 100,
+        memory_time: 100
+      )
+    end
+
+    @tag :perf
+    @tag timeout: 300_000
+    test "parallel performance test" do
+      data = :crypto.strong_rand_bytes(100)
+
+      Benchee.run(
+        %{
+          "ex_keccak" => fn ->
+            ExKeccak.hash_256(data)
+          end
+        },
+        time: 100,
+        memory_time: 100,
+        parallel: 4
+      )
+    end
   end
 end
