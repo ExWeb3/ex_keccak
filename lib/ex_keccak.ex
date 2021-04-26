@@ -1,5 +1,12 @@
 defmodule ExKeccak do
-  use Rustler, otp_app: :ex_keccak, crate: :exkeccak
+  defdelegate hash_256(data), to: ExKeccak.Impl
 
-  def hash_256(_data), do: :erlang.nif_error(:nif_not_loaded)
+  def hash_256!(data) do
+    case hash_256(data) do
+      {:ok, hash} ->
+        hash
+      {:error, :invalid_type} ->
+        raise ArgumentError, "#{inspect(data)} is not hashable"
+    end
+  end
 end

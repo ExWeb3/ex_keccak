@@ -12,7 +12,7 @@ mod atoms {
 }
 
 rustler::rustler_export_nifs! {
-    "Elixir.ExKeccak",
+    "Elixir.ExKeccak.Impl",
     [
         ("hash_256", 1, hash_256, rustler::SchedulerFlags::DirtyCpu)
     ],
