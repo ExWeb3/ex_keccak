@@ -11,7 +11,7 @@ The package can be installed by adding `ex_keccak` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:ex_keccak, "~> 0.1.2"}
+    {:ex_keccak, "~> 0.1.3"}
   ]
 end
 ```
