@@ -2,7 +2,7 @@
 
 ## v0.2.0
 
-  * Update ruslter to support OTP 24
+  * Update rustler to support OTP 24
 
 ## v0.1.3
 
