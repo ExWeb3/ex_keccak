@@ -1,5 +1,7 @@
 # ExKeccak
 
+[![Build Status](https://www.travis-ci.com/tzumby/ex_keccak.svg?branch=master)](https://www.travis-ci.com/tzumby/ex_keccak)
+
 ExKeccak is a NIF that wraps the KECCAK-256 function from the [tiny-keccak](https://github.com/debris/tiny-keccak) Rust library. KECCAK-256 is used by Ethereum.
 
 ## Installation
