@@ -11,27 +11,20 @@ The package can be installed by adding `ex_keccak` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:ex_keccak, "~> 0.1.3"}
+    {:ex_keccak, "~> 0.2.0"}
   ]
 end
 ```
 
 ## Usage
 
-To calculate KECCAK-256 hash, use `ExKeccak.hash_256/1` function. It returns `{:ok, result}` on success:
+To calculate KECCAK-256 hash, use `ExKeccak.hash_256/1` function. It returns `result` on success:
 
 ```elixir
-{
-  :ok,
-  <<28, 138, 255, 149, 6, 133, 194, 237, 75, 195, 23, 79, 52, 114, 40, 123, 86, 217, 81, 123, 156, 148, 129, 39, 49, 154, 9, 167, 163, 109, 234, 200>>
-} = ExKeccak.hash_256("hello")
+  <<28, 138, 255, 149, 6, 133, 194, 237, 75, 195, 23, 79, 52, 114, 40, 123, 86, 217, 81, 123, 156, 148, 129, 39, 49, 154, 9, 167, 163, 109, 234, 200>> = ExKeccak.hash_256("hello")
 ```
 
-And it returns `{:error, :invalid_type}` if the provided data is not binary:
-
-```elixir
-{:error, :invalid_type} = ExKeccak.hash_256(11)
-```
+And it returns `ArgumentError` is provided data is not binary
 
 ## Contributing
 

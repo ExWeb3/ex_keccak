@@ -9,7 +9,7 @@ defmodule ExKeccakTest do
           "5d1Ch4jboo9DcCWGj55ZT/tsW4nnG5+DlCFGddOfjTZmfQdzc4yBnodqszjYIaI+8Io41a789cV5rUwzvqxLzw=="
         )
 
-      {:ok, hashed_data} = ExKeccak.hash_256(data)
+      hashed_data = ExKeccak.hash_256(data)
 
       assert <<_::binary-12, address::binary-20>> = hashed_data
 
@@ -17,15 +17,21 @@ defmodule ExKeccakTest do
     end
 
     test "fails to decode number" do
-      assert {:error, :invalid_type} = ExKeccak.hash_256(11)
+      assert_raise ArgumentError, fn ->
+        ExKeccak.hash_256(11)
+      end
     end
 
     test "fails to decode nil" do
-      assert {:error, :invalid_type} = ExKeccak.hash_256(nil)
+      assert_raise ArgumentError, fn ->
+        ExKeccak.hash_256(nil)
+      end
     end
 
     test "fails to decode atom" do
-      assert {:error, :invalid_type} = ExKeccak.hash_256(:atom)
+      assert_raise ArgumentError, fn ->
+        ExKeccak.hash_256(:atom)
+      end
     end
 
     @tag :perf

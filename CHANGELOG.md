@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.0
+
+  * Update rustler to support OTP 24
+  * Leave only throwing function
+
 ## v0.1.3
 
   * Move NIF interface to module `ExKeccak.Impl`, making `ExKeccak` a wrapper
