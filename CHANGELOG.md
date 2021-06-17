@@ -1,8 +1,9 @@
 # Changelog
 
-## v1.0.0
+## v0.2.0
 
   * Update rustler to support OTP 24
+  * Leave only throwing function
 
 ## v0.1.3
 
