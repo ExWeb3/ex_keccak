@@ -10,7 +10,6 @@ defmodule ExKeccak.MixProject do
       compilers: Mix.compilers(),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      rustler_crates: rustler_crates(),
       source_url: "https://github.com/tzumby/ex_keccak",
       package: package(),
       deps: deps(),
@@ -46,18 +45,6 @@ defmodule ExKeccak.MixProject do
       extra_applications: [:logger]
     ]
   end
-
-  defp rustler_crates do
-    [
-      exkeccak: [
-        path: "native/exkeccak",
-        mode: rustc_mode(Mix.env())
-      ]
-    ]
-  end
-
-  defp rustc_mode(:prod), do: :release
-  defp rustc_mode(_), do: :debug
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
