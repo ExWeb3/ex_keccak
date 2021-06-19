@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0-rc.2
+
+  * Fix nif path configuration
+
 ## 0.2.0-rc.1
 
   * Update rustler to support OTP 24
