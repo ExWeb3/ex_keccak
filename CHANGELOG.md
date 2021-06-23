@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0
+
+  * Use stable version of ruslter
+
 ## 0.2.0-rc.2
 
   * Fix nif path configuration
