@@ -5,7 +5,7 @@ otp_release:
   - '24.0.2'
 
 before_install:
-  - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- -y
   - source $HOME/.cargo/env
 
 jobs:
