@@ -27,12 +27,3 @@ jobs:
 
     - elixir: '1.10.4'
       otp_release: '22.2.8'
-
-    - elixir: '1.9.4'
-      otp_release: '22.2.8'
-
-    - elixir: '1.8.2'
-      otp_release: '22.2.8'
-
-    - elixir: '1.7.4'
-      otp_release: '22.2.8'
