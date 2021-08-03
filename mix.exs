@@ -4,10 +4,10 @@ defmodule ExKeccak.MixProject do
   def project do
     [
       app: :ex_keccak,
-      version: "0.2.0",
+      version: "0.2.2",
       elixir: "~> 1.10",
       description: description(),
-      compilers: Mix.compilers(),
+      compilers: [:elixir_make] ++ Mix.compilers(),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       source_url: "https://github.com/tzumby/ex_keccak",
@@ -25,8 +25,8 @@ defmodule ExKeccak.MixProject do
       links: %{"GitHub" => "https://github.com/tzumby/ex_keccak"},
       files: [
         "mix.exs",
-        "native/exkeccak/src",
-        "native/exkeccak/Cargo.toml",
+        "Makefile",
+        "c_src",
         "lib",
         "LICENSE",
         "README.md",
@@ -36,7 +36,7 @@ defmodule ExKeccak.MixProject do
   end
 
   defp description do
-    "NIF library for computing Keccak SHA3-256 hashes using tiny-keccak Rust crate."
+    "NIF library for computing Keccak SHA3-256 hashes using C NIF."
   end
 
   # Run "mix help compile.app" to learn about applications.
@@ -49,9 +49,9 @@ defmodule ExKeccak.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
+      {:elixir_make, "~> 0.6.2", runtime: false},
+      {:ex_doc, "~> 0.25", only: :dev, runtime: false},
       {:benchee, "~> 1.0.1", only: :test},
-      {:rustler, "~> 0.22.0"}
     ]
   end
 end
