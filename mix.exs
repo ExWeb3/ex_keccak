@@ -49,7 +49,7 @@ defmodule ExKeccak.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.25", only: :dev, runtime: false},
       {:benchee, "~> 1.0.1", only: :test},
       {:rustler, "~> 0.22.0"}
     ]
