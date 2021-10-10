@@ -26,7 +26,9 @@ defmodule ExKeccak.MixProject do
       files: [
         "mix.exs",
         "native/exkeccak/src",
+        "native/exkeccak/.cargo/config",
         "native/exkeccak/Cargo.toml",
+        "native/exkeccak/Cargo.lock",
         "lib",
         "LICENSE",
         "README.md",
