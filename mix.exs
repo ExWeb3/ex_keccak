@@ -4,7 +4,7 @@ defmodule ExKeccak.MixProject do
   def project do
     [
       app: :ex_keccak,
-      version: "0.2.1",
+      version: "0.2.2",
       elixir: "~> 1.10",
       description: description(),
       compilers: Mix.compilers(),
@@ -26,7 +26,9 @@ defmodule ExKeccak.MixProject do
       files: [
         "mix.exs",
         "native/exkeccak/src",
+        "native/exkeccak/.cargo/config",
         "native/exkeccak/Cargo.toml",
+        "native/exkeccak/Cargo.lock",
         "lib",
         "LICENSE",
         "README.md",
