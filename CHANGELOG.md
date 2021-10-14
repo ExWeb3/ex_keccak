@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+
+  * Fixes a build issue with the included Cargo files
+
 ## 0.2.1
 
   * Adds `aarch64-apple-darwin` as a target to fix linking errors when compiling on Apple M1
