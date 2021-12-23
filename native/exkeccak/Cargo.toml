@@ -10,6 +10,6 @@ path = "src/lib.rs"
 crate-type = ["dylib"]
 
 [dependencies]
-rustler = "0.22.0"
+rustler = "0.23"
 lazy_static = "1.0"
 tiny-keccak = { version = "2.0", features = ["keccak"] }
