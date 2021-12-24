@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+  * Update rustler to 0.23.0
+
 ## 0.2.2
 
   * Fixes a build issue with the included Cargo files
