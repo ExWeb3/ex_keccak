@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0
+
+  * Update rustler to 0.24.0.
+
+    this version improves performance a little bit
+
 ## 0.3.0
 
   * Update rustler to 0.23.0
