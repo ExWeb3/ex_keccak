@@ -53,7 +53,7 @@ defmodule ExKeccak.MixProject do
     [
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:benchee, "~> 1.0", only: :test},
-      {:rustler, "~> 0.23"}
+      {:rustler, "~> 0.24"}
     ]
   end
 end
