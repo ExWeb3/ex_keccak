@@ -1,6 +1,6 @@
-use rustler::types::binary::Binary;
-use rustler::types::binary::NewBinary;
+use rustler::Binary;
 use rustler::Env;
+use rustler::NewBinary;
 use tiny_keccak::Hasher;
 use tiny_keccak::Keccak;
 
