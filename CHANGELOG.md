@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0
+
+  * Update rustler to 0.25.0.
+
 ## 0.4.0
 
   * Update rustler to 0.24.0.

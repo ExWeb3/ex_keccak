@@ -4,7 +4,7 @@ defmodule ExKeccak.MixProject do
   def project do
     [
       app: :ex_keccak,
-      version: "0.4.0",
+      version: "0.5.0",
       elixir: "~> 1.10",
       description: description(),
       compilers: Mix.compilers(),
