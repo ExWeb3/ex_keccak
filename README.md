@@ -13,7 +13,28 @@ The package can be installed by adding `ex_keccak` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:ex_keccak, "~> 0.6.0"}
+    {:ex_keccak, "~> 0.7.0"}
+  ]
+end
+```
+
+### Force compilation
+
+This library includes pre-compiled binaries for the native Rust code. If you 
+want to force-compile the Rust code, you can add the following configuration
+to your application:
+
+```
+config :rustler_precompiled, :force_build, ex_keccak: true
+```
+
+You also need to add Rusler to your dependencies:
+
+```
+def deps do
+  [
+    {:ex_keccak, "~> 0.7.0"},
+    {:rustler, ">= 0.0.0", optional: true}
   ]
 end
 ```

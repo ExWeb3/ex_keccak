@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.0
+
+  * Update rustler to 0.27.0
+  * Use `rustler_precompiled` to ship with multiple platform re-compiled binaries
+
 ## 0.6.0
 
   * Update rustler to 0.26.0
@@ -28,7 +33,7 @@
 
 ## 0.2.0
 
-  * Use stable version of ruslter
+  * Use stable version of rustler
 
 ## 0.2.0-rc.2
 
