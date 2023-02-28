@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       MIX_ENV: test
-      EXKECCAK_BUILD: "true"
+      EXKECCAK_BUILD: "1"
 
     name: Elixir ${{ matrix.pair.elixir }} / OTP ${{ matrix.pair.otp }}
 
