@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - rustler-precompiled-2
+      - rustler-precompiled2
     tags:
       - '*'
 
