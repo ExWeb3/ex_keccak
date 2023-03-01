@@ -6,14 +6,12 @@ ExKeccak is a NIF that wraps the KECCAK-256 function from the [tiny-keccak](http
 
 ## Installation
 
-`ex_keccak` requires Rust to be installed.
-
 The package can be installed by adding `ex_keccak` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:ex_keccak, "~> 0.7.0"}
+    {:ex_keccak, "~> 0.7.1"}
   ]
 end
 ```

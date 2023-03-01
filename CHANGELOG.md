@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.1
+
+  * Fix typo in README.md 
+  * Update rustler Rust crate ti 0.27
+
 ## 0.7.0
 
   * Update rustler to 0.27.0
