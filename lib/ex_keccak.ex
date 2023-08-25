@@ -11,7 +11,7 @@ defmodule ExKeccak do
     otp_app: :ex_keccak,
     crate: "exkeccak",
     base_url: "https://github.com/tzumby/ex_keccak/releases/download/v#{version}",
-    force_build: System.get_env("EXKECCAK_BUILD") in ["1", true] or env_config[:ex_keccak],
+    force_build: System.get_env("RUSTLER_BUILD") in ["1", true] or env_config[:ex_keccak],
     targets:
       Enum.uniq(["aarch64-unknown-linux-musl" | RustlerPrecompiled.Config.default_targets()]),
     version: version
