@@ -1,6 +1,11 @@
 # Changelog
 
-## 0.7.2
+## 0.7.3
+
+  * Add support for FreeBSD
+  * Update rustler Rust crate to 0.29
+
+## 0.7.2 (retired)
 
   * Add support for FreeBSD
   * Update rustler Rust crate to 0.29
