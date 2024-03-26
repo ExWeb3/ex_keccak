@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.7.4
+
+  * Update rusler Rust crate to 0.30
+
 ## 0.7.3
 
   * Add support for FreeBSD
