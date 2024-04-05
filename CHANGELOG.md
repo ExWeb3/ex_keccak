@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.5
+
+  * Update rusler Rust crate to 0.32
+  * Fix problem with precompiled nil versio missing 2.16
+
 ## 0.7.4
 
   * Update rusler Rust crate to 0.30
