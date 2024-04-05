@@ -17,7 +17,8 @@ defmodule ExKeccak do
         ["aarch64-unknown-linux-musl", "x86_64-unknown-freebsd"] ++
           RustlerPrecompiled.Config.default_targets()
       ),
-    version: version
+    version: version,
+    nif_versions: ["2.15", "2.16"]
 
   def hash_256(_data), do: :erlang.nif_error(:nif_not_loaded)
 end
