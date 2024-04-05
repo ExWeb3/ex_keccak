@@ -1,7 +1,7 @@
 defmodule ExKeccak.MixProject do
   use Mix.Project
 
-  @version "0.7.4"
+  @version "0.7.5"
   @source_url "https://github.com/tzumby/ex_keccak"
 
   def project do
