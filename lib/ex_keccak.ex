@@ -10,7 +10,7 @@ defmodule ExKeccak do
   use RustlerPrecompiled,
     otp_app: :ex_keccak,
     crate: "exkeccak",
-    base_url: "https://github.com/tzumby/ex_keccak/releases/download/v#{version}",
+    base_url: "https://github.com/exWeb3/ex_keccak/releases/download/v#{version}",
     force_build: System.get_env("RUSTLER_BUILD") in ["1", true] or env_config[:ex_keccak],
     targets:
       Enum.uniq(
