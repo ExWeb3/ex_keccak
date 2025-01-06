@@ -10,5 +10,5 @@ path = "src/lib.rs"
 crate-type = ["dylib"]
 
 [dependencies]
-rustler = "0.32"
+rustler = "0.35"
 tiny-keccak = { version = "2.0", features = ["keccak"] }

@@ -4,7 +4,7 @@ use rustler::NewBinary;
 use tiny_keccak::Hasher;
 use tiny_keccak::Keccak;
 
-rustler::init!("Elixir.ExKeccak", [hash_256]);
+rustler::init!("Elixir.ExKeccak");
 
 #[rustler::nif]
 fn hash_256<'a>(env: Env<'a>, data: Binary) -> Binary<'a> {
