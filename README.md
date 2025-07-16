@@ -11,7 +11,7 @@ The package can be installed by adding `ex_keccak` to your list of dependencies 
 ```elixir
 def deps do
   [
-    {:ex_keccak, "~> 0.7.6"}
+    {:ex_keccak, "~> 0.7.7"}
   ]
 end
 ```
@@ -31,7 +31,7 @@ You also need to add Rusler to your dependencies:
 ```
 def deps do
   [
-    {:ex_keccak, "~> 0.7.6"},
+    {:ex_keccak, "~> 0.7.7"},
     {:rustler, ">= 0.0.0", optional: true}
   ]
 end

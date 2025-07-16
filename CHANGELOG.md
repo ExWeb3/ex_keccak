@@ -2,6 +2,10 @@
 
 ## 0.7.6
 
+  * Update rusler Rust crate to 0.36.2
+
+## 0.7.6
+
   * Update rusler Rust crate to 0.35
 
 ## 0.7.5
