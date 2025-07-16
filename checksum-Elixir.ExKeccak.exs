@@ -1,24 +1,46 @@
 %{
-  "exkeccak-v0.7.6-nif-2.15-x86_64-pc-windows-gnu.dll.tar.gz" => "sha256:7edc90f307a8045a4bfc164734dc88f18bd4df2f1b044b7264ab56003b7aff9e",
-  "exkeccak-v0.7.6-nif-2.15-x86_64-pc-windows-msvc.dll.tar.gz" => "sha256:7e6ad53b236c7fec5d91f0026f0b7f55ed5506b26a6e0309da25ad9b71a9ac6a",
-  "exkeccak-v0.7.6-nif-2.16-x86_64-pc-windows-gnu.dll.tar.gz" => "sha256:8dd3c24e09e820994dd6ccf881fc42b1ff6c5892f4ab158981aa5588d3796c91",
-  "exkeccak-v0.7.6-nif-2.16-x86_64-pc-windows-msvc.dll.tar.gz" => "sha256:4fe746801ac408d9ff987e77bf61d095ce32d675ec5e65b821be15785d7a51a2",
-  "libexkeccak-v0.7.6-nif-2.15-aarch64-apple-darwin.so.tar.gz" => "sha256:db20d78ddfcbe93a0b6ff3ff55f7bf1491865dcc7d6fc831b6eb2f10359ce384",
-  "libexkeccak-v0.7.6-nif-2.15-aarch64-unknown-linux-gnu.so.tar.gz" => "sha256:1b309e370ecc172d5886d923716231079c41794d8e59ace0cc9dad030d4e5b7d",
-  "libexkeccak-v0.7.6-nif-2.15-aarch64-unknown-linux-musl.so.tar.gz" => "sha256:4532b005636d7d077a2fd563f0ee5e3853a37eecb816ace2418767d438c16c01",
-  "libexkeccak-v0.7.6-nif-2.15-arm-unknown-linux-gnueabihf.so.tar.gz" => "sha256:87c160a4c0567d087b4efd8891e4c742b02123e043d96994aa4255468794140f",
-  "libexkeccak-v0.7.6-nif-2.15-riscv64gc-unknown-linux-gnu.so.tar.gz" => "sha256:e652b7c45f0e23dc25fbb28a330571bba0132bbc3d617717406d33c833697d80",
-  "libexkeccak-v0.7.6-nif-2.15-x86_64-apple-darwin.so.tar.gz" => "sha256:04258446720f4ecb02690af52be0c0f0e8228a02c1e0168953525c33c2fe317c",
-  "libexkeccak-v0.7.6-nif-2.15-x86_64-unknown-freebsd.so.tar.gz" => "sha256:669924a72cec129e766657529278302e1fb418f951aaa463e8fb077117f6151b",
-  "libexkeccak-v0.7.6-nif-2.15-x86_64-unknown-linux-gnu.so.tar.gz" => "sha256:51b3695ed663c1a3f6d97df6dd28a334842f10baf5ecd8a58007e4611eba2447",
-  "libexkeccak-v0.7.6-nif-2.15-x86_64-unknown-linux-musl.so.tar.gz" => "sha256:6e5389c39b7042386b9f02e891815c67837bb1ed24e65babb0db635b46512459",
-  "libexkeccak-v0.7.6-nif-2.16-aarch64-apple-darwin.so.tar.gz" => "sha256:ccb86f8cb26e1239d205bf289cfb9e31c6841b6405d8aa342a5b915ba814609f",
-  "libexkeccak-v0.7.6-nif-2.16-aarch64-unknown-linux-gnu.so.tar.gz" => "sha256:ab8e2428c0b61d28375dc97b1e9df452a6eb8bdb8d73199dca67e9155a5eb1c5",
-  "libexkeccak-v0.7.6-nif-2.16-aarch64-unknown-linux-musl.so.tar.gz" => "sha256:4520462569d69b09f20ee07d6322fa1df4e939c3de51b0eedc531aa4608647c6",
-  "libexkeccak-v0.7.6-nif-2.16-arm-unknown-linux-gnueabihf.so.tar.gz" => "sha256:0ba4632015e2c4154019de15b7b508fd6187619ecb5c39771358b3f47dccdfdf",
-  "libexkeccak-v0.7.6-nif-2.16-riscv64gc-unknown-linux-gnu.so.tar.gz" => "sha256:08ebc915fa17ecb725b92e987d584041c25644fb796bf811288f44748bc0ff2a",
-  "libexkeccak-v0.7.6-nif-2.16-x86_64-apple-darwin.so.tar.gz" => "sha256:de92959b111d04bd67c08888485ead6519f3e3ee85ee7a31dd757715c53c55b7",
-  "libexkeccak-v0.7.6-nif-2.16-x86_64-unknown-freebsd.so.tar.gz" => "sha256:9824ac09a96a1f07bbe102a448589792fb8d058484183512a1575c31e8682338",
-  "libexkeccak-v0.7.6-nif-2.16-x86_64-unknown-linux-gnu.so.tar.gz" => "sha256:33c980f6f48199f7c0f8176a5957bb7cf4cb100d9076f83f82d128b310b2bf18",
-  "libexkeccak-v0.7.6-nif-2.16-x86_64-unknown-linux-musl.so.tar.gz" => "sha256:1dddee2bd914f3c7862e2b390b3e65545dc3b84237ed0e14f5e3bf6432732046",
+  "exkeccak-v0.7.7-nif-2.15-x86_64-pc-windows-gnu.dll.tar.gz" =>
+    "sha256:c87df43b9901e39d1abd780f116bb017e3e84dfd2b5d90b66f56d49799ce9d08",
+  "exkeccak-v0.7.7-nif-2.15-x86_64-pc-windows-msvc.dll.tar.gz" =>
+    "sha256:c23f03f61ef59ac4f6165305ed48ae7487ec179b12d103c01aacbc6e3632a336",
+  "exkeccak-v0.7.7-nif-2.16-x86_64-pc-windows-gnu.dll.tar.gz" =>
+    "sha256:a7c6f7e24407c9ff82b865a0b002df2c484a7e21c3d33e5d35451a227897c99b",
+  "exkeccak-v0.7.7-nif-2.16-x86_64-pc-windows-msvc.dll.tar.gz" =>
+    "sha256:46aef9abfc10dd723224cce6e7030e9851beaa550453d8ff16af2940a1d79785",
+  "libexkeccak-v0.7.7-nif-2.15-aarch64-apple-darwin.so.tar.gz" =>
+    "sha256:04320d75df1dcd050feb883e5454bedf221477ea14778a9bc3ee07af59a66fb2",
+  "libexkeccak-v0.7.7-nif-2.15-aarch64-unknown-linux-gnu.so.tar.gz" =>
+    "sha256:ad5b18c33a13d8585b03ae36ebfc7e91701ee6afde677787825d4a654615ef9b",
+  "libexkeccak-v0.7.7-nif-2.15-aarch64-unknown-linux-musl.so.tar.gz" =>
+    "sha256:8e2fc4527ddcddaf4ec4746691bfd079a99eb05d2758193e1d85d681b686efe1",
+  "libexkeccak-v0.7.7-nif-2.15-arm-unknown-linux-gnueabihf.so.tar.gz" =>
+    "sha256:8a99e38728b3f1c0dc468865685face30c3c4acb2a79141cd876adcff2295db2",
+  "libexkeccak-v0.7.7-nif-2.15-riscv64gc-unknown-linux-gnu.so.tar.gz" =>
+    "sha256:b3bf59540f9f2d498e0908c20bd8ed90c1574e69c7a90036e09c6247c6fbe415",
+  "libexkeccak-v0.7.7-nif-2.15-x86_64-apple-darwin.so.tar.gz" =>
+    "sha256:4b5ee828d062ee3811f5893d9420098481d8e0b6fbb9ed52851332bcf389cee2",
+  "libexkeccak-v0.7.7-nif-2.15-x86_64-unknown-freebsd.so.tar.gz" =>
+    "sha256:00c696d277e1c0f40b4ad67b44dab8b4db826ce2d11d2f395eabac12472ab970",
+  "libexkeccak-v0.7.7-nif-2.15-x86_64-unknown-linux-gnu.so.tar.gz" =>
+    "sha256:a44a0c365a2adb7dfd2f93eeb6fb218d23f2a328389a23fa67ecd41a94c4dded",
+  "libexkeccak-v0.7.7-nif-2.15-x86_64-unknown-linux-musl.so.tar.gz" =>
+    "sha256:d6d85466aa84dca3ba23d0305b4e582c2e6d61dbc09d0c25490adeea5b81c76e",
+  "libexkeccak-v0.7.7-nif-2.16-aarch64-apple-darwin.so.tar.gz" =>
+    "sha256:fcb37039cc9bb6d95c2ae40ceddf544b6cf425565e65c298972649a4d2dd8f4c",
+  "libexkeccak-v0.7.7-nif-2.16-aarch64-unknown-linux-gnu.so.tar.gz" =>
+    "sha256:fe4f96a325d2ec8e0b18de204e90879bf0a64d0d8461051636b1c66a227329b7",
+  "libexkeccak-v0.7.7-nif-2.16-aarch64-unknown-linux-musl.so.tar.gz" =>
+    "sha256:19498334e432f37a8112c0d92528af03d1c1e5f5cbf61bd5353ac57afa69a761",
+  "libexkeccak-v0.7.7-nif-2.16-arm-unknown-linux-gnueabihf.so.tar.gz" =>
+    "sha256:8d0f9e8d067e75f926a5c8189080ac2c4de2710951a62599cde2286c50a9e93b",
+  "libexkeccak-v0.7.7-nif-2.16-riscv64gc-unknown-linux-gnu.so.tar.gz" =>
+    "sha256:6414df86d515ccb4e2bdb2b4ad215222f816779e841d970ed4891efa2fb9714c",
+  "libexkeccak-v0.7.7-nif-2.16-x86_64-apple-darwin.so.tar.gz" =>
+    "sha256:96783d7011f88ebec98e65b305b572988f0376317e513c8e3749232f257d8391",
+  "libexkeccak-v0.7.7-nif-2.16-x86_64-unknown-freebsd.so.tar.gz" =>
+    "sha256:438f5f8cc2be9a097e3924bda48d40f8b58fa8ccf875c5cff40deccb55c1de09",
+  "libexkeccak-v0.7.7-nif-2.16-x86_64-unknown-linux-gnu.so.tar.gz" =>
+    "sha256:3106800121f620c44bcd42a438677463a0943b5387cef9255171a406268399fc",
+  "libexkeccak-v0.7.7-nif-2.16-x86_64-unknown-linux-musl.so.tar.gz" =>
+    "sha256:964e41564a07f94fc5c8e50bcfc531eafbfbdde441b1edda9f350067d802bf33"
 }
