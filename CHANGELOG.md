@@ -6,7 +6,7 @@
 
 ## 0.7.7
 
-  * Update rusler Rust crate to 0.36.2
+  * Update rustler Rust crate to 0.36.2
 
 ## 0.7.6
 
