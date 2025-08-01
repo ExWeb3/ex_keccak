@@ -1,8 +1,12 @@
 # Changelog
 
-## 0.7.6
+## 0.7.8
 
-  * Update rusler Rust crate to 0.36.2
+  * Use ubuntu 22.04 to precompile nif
+
+## 0.7.7
+
+  * Update rustler Rust crate to 0.36.2
 
 ## 0.7.6
 
